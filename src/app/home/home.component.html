@@ -1,0 +1,338 @@
+<!-- the met cafe background -->
+<div
+  class="masthead"
+  style="background-image: url('../assets/coffee_images/food_and_drink1.webp')"
+>
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h1>THE MET CAFE</h1>
+  </div>
+  <br /><br /><br />
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h4>
+      We believe a cup of coffee is one of the most<br />
+      important, simple pleasures in life
+    </h4>
+  </div>
+  <br /><br /><br />
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <button type="button" class="btn btn-secondary btn-lg shop_button">
+      <a routerLink="/sale">Shop Now</a>
+    </button>
+  </div>
+</div>
+
+<!-- bestsellers carousel -->
+<div class="div_bestseller">
+  <h3>Our Bestsellers</h3>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img
+          src="../assets/coffee_images/americano.jpg"
+          class="d-block w-50"
+          alt="..."
+        />
+        <div class="carousel-caption d-flex justify-content-center">
+          <!-- <h5>Americano</h5>
+          <p></p> -->
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img
+          src="../assets/coffee_images/mala_shan.jpg"
+          class="d-block w-50"
+          alt="..."
+        />
+        <div class="carousel-caption d-flex justify-content-center">
+          <!-- <h5>Ice Americano</h5>
+          <p></p> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="../assets/coffee_images/pork_spicy_noodle.jpg"
+          class="d-block w-50"
+          alt="..."
+        />
+        <div class="carousel-caption d-flex justify-content-center">
+          <!-- <h5>Ice Cappuccino</h5>
+          <p></p> -->
+        </div>
+      </div>
+    </div>
+
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleDark"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- <div style="height: 10px"></div> -->
+
+<!-- food and drink background -->
+<h1 style="text-align: center">..........</h1>
+<br />
+<div style="height: 10px"></div>
+
+<div
+  class="masthead"
+  style="
+    background-image: url('../assets/coffee_images/food_and_drink_bg.jpeg');
+  "
+>
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h1>Food and Drinks</h1>
+  </div>
+  <br /><br /><br />
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h4>Find your taste</h4>
+  </div>
+  <br /><br /><br />
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <button type="button" class="btn btn-secondary btn-lg shop_button">
+      <a  routerLink="/sale">Shop Now</a>
+    </button>
+  </div>
+</div>
+<br /><br />
+
+<!-- card -->
+<div class="row" style="background-color: #f5d6b1;">
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1" *ngFor="let item of foodAndDrinks; let i = index">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/{{item.image}}"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{item.productName}}</h5>
+        <p class="card-text">{{item.price}}</p>
+        <a routerLink="/sale"><button class="btn btn-secondary" style="width: 100px;">sale</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/lemon_fresh_ginger.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Lemon Fresh Ginger</h5>
+        <p class="card-text">2500 Ks</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/egg_roll.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Egg Roll</h5>
+        <p class="card-text">3000 Ks</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/strawberry_cream_sandwich.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Strawberry Cream Sandwich</h5>
+        <p class="card-text">2500 Ks</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/sushi_sandwich.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Sushi Sandwich</h5>
+        <p class="card-text">3000 Ks</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images//mango_juice.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Mango Juice</h5>
+        <p class="card-text">2500 Ks</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/mala_doat_htoe.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">မာလာ ဒုတ်ထိုး</h5>
+        <p class="card-text">5000 Ks</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/mala_shan.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">မာလာ ရှမ်းေကာ</h5>
+        <p class="card-text">5000 Ks</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+    <div class="card card_gap" style="width: 27rem">
+      <img
+        class="card-img-top"
+        src="../assets/coffee_images/pork_spicy_noodle.jpg"
+        alt="Card image cap"
+      />
+      <div class="card-body">
+        <h5 class="card-title">Spicy + သံုးထပ်သား</h5>
+        <p class="card-text">3500 Ks</p>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- sign up -->
+<h1 style="text-align: center">..........</h1>
+<br />
+<div style="height: 10px"></div>
+
+<div
+  class="masthead"
+  style="background-image: url('../assets/coffee_images/newletter.jpeg')"
+>
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h1>Sign-up for our newsletter</h1>
+  </div>
+  <br><br><br><br>
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <form>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg" style="background: #D07000; border-color:black;"
+          >Your Email*</span
+        >
+        <input
+          type="email"
+          class="form-control"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-lg"
+          style="background: #D07000; border-color:black; width: 300px;"
+        />
+      </div><br>
+      <button type="submit" class="btn btn-secondary btn-lg submit_email">Submit</button>
+    </form>
+  </div>
+</div>
+<br /><br />
+
+<!-- footer -->
+<footer class="text-white" style="background-color: #f1f1f1">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <!-- Grid container -->
+      <div class="container pt-4 footer_div1">
+        <h3 style="color: black; margin-left: 20px">THE MET</h3>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 footer_div2">
+      <a href="#">Payments &amp; Delivery</a><br>
+      <a routerLink="/contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<router-outlet></router-outlet>

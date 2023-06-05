@@ -1,0 +1,192 @@
+<div
+  class="masthead"
+  style="background-image: url('../assets/coffee_images/shop2.jpeg')"
+>
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h1>Menu</h1>
+  </div>
+  
+</div><br><br>
+
+<div class="row">
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1" *ngFor="let item of menu; let i = index;">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/{{item.image}}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <button class="btn btn-secondary sale_btn" routerLink="/sale">SALE</button>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/coffee.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/frappe_milk_tea.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/korean_food.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem;  background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/main_course.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/seafood_family_set.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/special_malar.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/spicy_family_set.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/steak.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/spicy_noodle.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card" style="width: 27rem; background-color: #f5d6b1;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/myanmar_food.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+            <button class="btn btn-secondary sale_btn">SALE</button>
+        </div>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- footer -->
+<footer class="text-white" style="background-color: #f1f1f1">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <!-- Grid container -->
+      <div class="container pt-4 footer_div1">
+        <h3 style="color: black; margin-left: 20px">THE MET</h3>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 footer_div2">
+      <a href="#">Payments &amp; Delivery</a><br>
+      <a routerLink="/contact">Contact</a>
+    </div>
+  </div>
+</footer>

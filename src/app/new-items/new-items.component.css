@@ -1,0 +1,13 @@
+/* .footer_div1 {
+    text-align: center;
+    padding: 20px;
+  }
+  .footer_div2 {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+  } */
+  body {
+    z-index: 1;
+  }

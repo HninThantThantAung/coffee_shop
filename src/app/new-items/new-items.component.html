@@ -1,0 +1,202 @@
+<div
+  class="masthead"
+  style="background-image: url('../assets/coffee_images/new_items.jpeg')"
+>
+  <div class="color_overlay d-flex justify-content-center align-items-center">
+    <h1>New Items</h1>
+  </div>
+  
+</div><br><br>
+
+<div class="row" style="background-color: #f5d6b1">
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1" *ngFor="let item of newItems; let i = index;">
+      <div class="card card_gap" style="width: 27rem;">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/{{item.image}}"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">{{item.productName}}</h5>
+          <p class="card-text">{{item.price}}</p>
+          <a routerLink="/sale"><button class="btn btn-secondary" style="width: 100px;">sale</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/mango_crepe.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Mango crepe</h5>
+          <p class="card-text">1200 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/hot_dog.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hot dog</h5>
+          <p class="card-text">1200 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/cheesy_bun.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Cheesy bun</h5>
+          <p class="card-text">1500 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/hokkaido.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Hokkaido</h5>
+          <p class="card-text">1500 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/chocolate_bread.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Chocolate bread</h5>
+          <p class="card-text">1200 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/brownie_cake.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Brownie cake</h5>
+          <p class="card-text">500 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/chocolate_cup_cake.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Chocolate cup cake</h5>
+          <p class="card-text">1000 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+      <div class="card card_gap" style="width: 27rem">
+        <img
+          class="card-img-top"
+          src="../../assets/coffee_images/chocolate_lava_cake.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Chocolate lava cake</h5>
+          <p class="card-text">1000 Ks</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+        <div class="card card_gap" style="width: 27rem">
+          <img
+            class="card-img-top"
+            src="../../assets/coffee_images/black_forest.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Black forest cake</h5>
+            <p class="card-text">1500 Ks</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6 mb-3" style="background-color: #f5d6b1">
+        <div class="card card_gap" style="width: 27rem">
+          <img
+            class="card-img-top"
+            src="../../assets/coffee_images/choco_mousse.jpg"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Chocolate mousse cake</h5>
+            <p class="card-text">1500 Ks</p>
+          </div>
+        </div>
+      </div> -->
+  </div>
+
+  <!-- footer -->
+<footer class="text-white" style="background-color: #f1f1f1">
+  <div class="row">
+    <div class="col-lg-6 col-md-12">
+      <!-- Grid container -->
+      <div class="container pt-4 footer_div1">
+        <h3 style="color: black; margin-left: 20px">THE MET</h3>
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-12 footer_div2">
+      <a href="#">Payments &amp; Delivery</a><br>
+      <a routerLink="/contact">Contact</a>
+    </div>
+  </div>
+</footer>

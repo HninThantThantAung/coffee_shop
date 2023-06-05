@@ -1,0 +1,9 @@
+.contact_form {
+  padding: 10px;
+}
+.form-control {
+    border: black;
+}
+body{
+  z-index: 1;
+}
